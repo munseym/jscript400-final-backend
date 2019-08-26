@@ -12,10 +12,12 @@ const schema = mongoose.Schema({
   },
   email: {
     type: String,
+    match: /\S+@\S+\.\S+/,
     required: true
   },
   password: {
     type: String,
+    minlength: 8,
     required: true
   },
   isAdmin: {

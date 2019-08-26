@@ -44,7 +44,13 @@ router.post('/signup', async (req, res, next) => {
 
   const alreadyExists = await User.findOne({ emailAddress })
   if (alreadyExists) {
-    const error = new Error(`Username '${username}' is already taken.`)
+    const error = new Error(`Email '${emailAddress}' is already taken.`)
+    error.status = 400
+
+    return next(error)
+  }
+  if (password && password.length < 8) {
+    const error = new Error(`Password must be at least 8 characters`)
     error.status = 400
 
     return next(error)
