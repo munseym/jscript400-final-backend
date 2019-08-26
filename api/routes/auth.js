@@ -38,11 +38,11 @@ router.post('/login', async (req, res, next) => {
 })
 
 router.post('/signup', async (req, res, next) => {
-  const { username, password } = req.body
+  const { emailAddress, password, firstName, lastName } = req.body
   const rounds = 10
   const hashed = await bcrypt.hash(password, rounds)
 
-  const alreadyExists = await User.findOne({ username })
+  const alreadyExists = await User.findOne({ emailAddress })
   if (alreadyExists) {
     const error = new Error(`Username '${username}' is already taken.`)
     error.status = 400
@@ -51,7 +51,7 @@ router.post('/signup', async (req, res, next) => {
   }
 
   const status = 201
-  const user = await User.create({ username, password: hashed })
+  const user = await User.create({ email:emailAddress, password: hashed, firstName, lastName, isAdmin:false })
   const token = generateToken(user._id)
   res.status(status).json({ status, token })
 })
