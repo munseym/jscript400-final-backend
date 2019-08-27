@@ -15,7 +15,7 @@ const reset = async () => {
       email: 'admin@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: true,
-      assignmnents: [
+      assignments: [
       ]
     },
     {
@@ -24,7 +24,7 @@ const reset = async () => {
       email: 'student@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -45,7 +45,7 @@ const reset = async () => {
       email: 'breanna.mcgrath@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -68,7 +68,7 @@ const reset = async () => {
       email: 'mhumphries@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -91,7 +91,7 @@ const reset = async () => {
       email: 'ivor.davison@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -114,7 +114,7 @@ const reset = async () => {
       email: 'daanventura@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -137,7 +137,7 @@ const reset = async () => {
       email: 'tysonatherton3@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -160,7 +160,7 @@ const reset = async () => {
       email: 'munsey@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -183,7 +183,7 @@ const reset = async () => {
       email: 'beaubarth@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -204,7 +204,7 @@ const reset = async () => {
       email: 'jeremydiaz@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',
@@ -225,7 +225,7 @@ const reset = async () => {
       email: 'ryanfields@email.com',
       password: bcrypt.hashSync('password', 10),
       isAdmin: false,
-      assignmnents: [
+      assignments: [
         {
           title: 'HTML & CSS Project',
           description: 'This is an HTML & CSS Project I workd on during our class',

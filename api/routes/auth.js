@@ -19,8 +19,8 @@ router.get('/profile', async (req, res, next) => {
 })
 
 router.post('/login', async (req, res, next) => {
-  const { username, password } = req.body
-  const user = await User.findOne({ username })
+  const { emailAddress, password } = req.body
+  const user = await User.findOne({ email:emailAddress })
   if (user) {
     const valid = await bcrypt.compare(password, user.password)
     if (valid) {
@@ -42,7 +42,7 @@ router.post('/signup', async (req, res, next) => {
   const rounds = 10
   const hashed = await bcrypt.hash(password, rounds)
 
-  const alreadyExists = await User.findOne({ emailAddress })
+  const alreadyExists = await User.findOne({ email:emailAddress })
   if (alreadyExists) {
     const error = new Error(`Email '${emailAddress}' is already taken.`)
     error.status = 400

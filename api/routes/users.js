@@ -48,4 +48,30 @@ router.delete('/:userId', isLoggedIn, isSameUser, async (req, res, next) => {
 //   res.json({ status, response: post })
 // })
 
+router.post('/:userId/assignments', isLoggedIn, isSameUser, async (req, res, next) => {
+  const status = 200
+
+  const { userId } = req.params 
+  const user = await User.findById(userId).select(excludeKeys)
+
+  user.assignments.push(req.body)
+  const response = await user.save()
+
+  res.json({ status, response })
+})
+
+router.put('/:userId/assignments/:assignmentId', isLoggedIn, isSameUser, async (req, res, next) => {
+  const status = 200
+
+  const { userId, assignmentId } = req.params 
+  const user = await User.findById(userId).select(excludeKeys)
+  const assignment = user.assignments.id(postId)
+  Object.assign(assignment, req.body)
+  const response = await user.save()
+
+  res.json({ status, response })
+})
+
+
+
 module.exports = router
