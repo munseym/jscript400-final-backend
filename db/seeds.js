@@ -27,7 +27,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo'
         },
         {
@@ -48,7 +48,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo',
           score: 44,
           scorePossible: 50 
@@ -71,7 +71,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo',
           score: 48,
           scorePossible: 50 
@@ -94,7 +94,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo',
           score: 18,
           scorePossible: 50 
@@ -117,7 +117,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo',
           score: 31,
           scorePossible: 50 
@@ -140,7 +140,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo',
           score: 26,
           scorePossible: 50 
@@ -163,7 +163,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo',
           score: 50,
           scorePossible: 50 
@@ -186,7 +186,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo'
         },
         {
@@ -207,7 +207,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo'
         },
         {
@@ -228,7 +228,7 @@ const reset = async () => {
       assignments: [
         {
           title: 'HTML & CSS Project',
-          description: 'This is an HTML & CSS Project I workd on during our class',
+          description: 'This is an HTML & CSS Project I worked on during our class',
           link:'https://github.com/username/project-repo'
         },
         {
