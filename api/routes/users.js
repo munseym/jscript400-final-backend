@@ -65,7 +65,7 @@ router.put('/:userId/assignments/:assignmentId', isLoggedIn, isSameUser, async (
 
   const { userId, assignmentId } = req.params 
   const user = await User.findById(userId).select(excludeKeys)
-  const assignment = user.assignments.id(postId)
+  const assignment = user.assignments.id(assignmentId)
   Object.assign(assignment, req.body)
   const response = await user.save()
 
