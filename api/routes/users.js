@@ -53,6 +53,8 @@ router.post('/:userId/assignments', isLoggedIn, isSameUser, async (req, res, nex
   const { userId } = req.params 
   const user = await User.findById(userId).select(excludeKeys)
 
+  delete req.body._id
+
   user.assignments.push(req.body)
   const response = await user.save()
 
